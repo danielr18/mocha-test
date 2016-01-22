@@ -3,6 +3,7 @@ Mocha is a testing library for Node.js, created to be a simple, extensible, and 
 
 This repo shows its usage by implementing a color converter that can translate from RGB (red, green, blue) to hexadecimal color representation. As well as creating a web server that exposes the above converter, and demonstrates how to test asynchronous code.
 
+Mocha Repository: https://github.com/mochajs/mocha
 Source: https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha
 ##Installation
 Install with npm:
