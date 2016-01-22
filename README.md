@@ -4,7 +4,7 @@ Source: https://semaphoreci.com/community/tutorials/getting-started-with-node-js
 ##Installation
 Install with npm:
 ```
-$ npm install -g mocha
+$ npm install mocha
 ```
 ##Usage
 We will update the test command in package.json to contain the following command
@@ -16,22 +16,39 @@ We will update the test command in package.json to contain the following command
 }
 ```
 In order to run the tests simply execute
-```ShellSession
+```
 $npm test
 ```
+##Syntaxis
 ###describe
-Mocha gives us the ability to describe the features that we are implementing by giving us a describe function that encapsulates our expectations. The first argument is a simple string that describes the feature, while the second argument is a function that represents the body of the description.
+describe the features that we are implementing by giving us a describe function that encapsulates our expectations.
 ```javascript
 describe("Feature", function() {
 
 });
 ```
 ###it
-We will set up a concrete thing we are testing using the it feature. The it function is very similar to the describe function, except that we can only put expectations in the body of the it function. Let's use it for our color converter:
+The it function is very similar to the describe function, except that we can only put expectations in the body of the it function.
 ```javascript
 describe("Feature", function() {
     it("Expectation", function() {
 
     });
 });
+```
+####done
+For every it that needs to wait for a response value, inject a done callback function and call it only when the expectations were executed.
+```javascript
+var expect = require('chai').expect;
+var request = require('request');
+//...
+describe("Feature", function() {
+    it("Expectation", function() {
+        request(url, function(error, response, body) {
+            //Expectation
+            done();
+        });
+    });
+});
+//...
 ```
