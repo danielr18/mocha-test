@@ -7,16 +7,17 @@ Install with npm:
 $ npm install -g mocha
 ```
 ##Usage
-In order to run our tests simply by executing npm test from the command line. We will update the test command in package.json to contain the following command
-```
+We will update the test command in package.json to contain the following command
+```json
 {
-  //...
   "scripts": {
-     ...
     "test": "./node_modules/.bin/mocha --reporter spec"
-  },
-  ...
+  }
 }
+```
+In order to run the tests simply execute
+```ShellSession
+$npm test
 ```
 ###describe
 Mocha gives us the ability to describe the features that we are implementing by giving us a describe function that encapsulates our expectations. The first argument is a simple string that describes the feature, while the second argument is a function that represents the body of the description.
