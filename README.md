@@ -24,7 +24,7 @@ $npm test
 ```
 ##Syntaxis
 ###describe
-describe the features that we are implementing by giving us a describe function that encapsulates our expectations.
+Describe the features that we are implementing by giving us a describe function that encapsulates our expectations.
 ```javascript
 describe("Feature", function() {
 
@@ -39,7 +39,7 @@ describe("Feature", function() {
     });
 });
 ```
-####done
+#####done
 For every it that needs to wait for a response value, inject a done callback function and call it only when the expectations were executed.
 ```javascript
 var expect = require('chai').expect;
