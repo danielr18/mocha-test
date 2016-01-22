@@ -5,6 +5,7 @@ Install with npm:
 ```
 $ npm install -g mocha
 ```
+##Usage
 ###describe
 Mocha gives us the ability to describe the features that we are implementing by giving us a describe function that encapsulates our expectations. The first argument is a simple string that describes the feature, while the second argument is a function that represents the body of the description.
 ```javascript
