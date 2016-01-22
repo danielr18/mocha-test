@@ -1,6 +1,8 @@
 #Mocha
-Mocha is a testing library for Node.js, created to be a simple, extensible, and fast testing suite, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases.\n
+Mocha is a testing library for Node.js, created to be a simple, extensible, and fast testing suite, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases.
+
 This repo shows its usage by implementing a color converter that can translate from RGB (red, green, blue) to hexadecimal color representation. As well as creating a web server that exposes the above converter, and demonstrates how to test asynchronous code.
+
 Source: https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha
 ##Installation
 Install with npm:
