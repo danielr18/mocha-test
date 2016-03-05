@@ -11,7 +11,7 @@ Install with npm:
 $ npm install mocha
 ```
 ##Usage
-We will update the test command in package.json to contain the following command
+We will update the test command in package.json to contain the following command.
 ```json
 {
   "scripts": {
