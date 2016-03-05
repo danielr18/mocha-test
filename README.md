@@ -15,7 +15,7 @@ We will update the test command in package.json to contain the following command
 ```json
 {
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "mocha test/mocha.js"
   }
 }
 ```
